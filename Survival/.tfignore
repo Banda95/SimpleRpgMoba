@@ -1,0 +1,10 @@
+#Oradia
+obj
+!*.obj
+!*.dll
+Library
+Temp
+.vs
+*.sln
+*.csproj
+*.suo

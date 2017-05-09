@@ -1,0 +1,223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000012254853358}
+  m_IsPrefabParent: 1
+--- !u!1 &1000010163747380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011821676334}
+  - 33: {fileID: 33000010290951254}
+  - 23: {fileID: 23000011010108362}
+  m_Layer: 13
+  m_Name: Fancy_tavern
+  m_TagString: Barrack
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000012254853358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011095702058}
+  - 114: {fileID: 114000013042454950}
+  - 65: {fileID: 65000013627738596}
+  - 114: {fileID: 114000013506884712}
+  - 114: {fileID: 114000011127256410}
+  - 114: {fileID: 114000010510717746}
+  - 114: {fileID: 114000011868317614}
+  m_Layer: 13
+  m_Name: BarrackB
+  m_TagString: Barrack
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000011095702058
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012254853358}
+  m_LocalRotation: {x: -0, y: 0.8761123, z: -0, w: -0.4821071}
+  m_LocalPosition: {x: -40.15, y: 18.000015, z: 94.87345}
+  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalEulerAnglesHint: {x: 0, y: 237.53299, z: 0}
+  m_Children:
+  - {fileID: 4000011821676334}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &4000011821676334
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010163747380}
+  m_LocalRotation: {x: -0, y: 0.011450945, z: -0, w: 0.99993443}
+  m_LocalPosition: {x: -0.006, y: 1.17588, z: -0.245}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 1.274, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000011095702058}
+  m_RootOrder: 0
+--- !u!23 &23000011010108362
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010163747380}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 29f03923828b6314eaee63ed06ddc49a, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &33000010290951254
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010163747380}
+  m_Mesh: {fileID: 4300002, guid: 1411cafb8ec702541957a85180719650, type: 3}
+--- !u!65 &65000013627738596
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012254853358}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.24, y: 4.33, z: 2.22}
+  m_Center: {x: 0, y: 0, z: -0.3}
+--- !u!114 &114000010510717746
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012254853358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 117
+    i1: 60
+    i2: 136
+    i3: 229
+    i4: 191
+    i5: 158
+    i6: 155
+    i7: 20
+    i8: 232
+    i9: 17
+    i10: 30
+    i11: 24
+    i12: 131
+    i13: 235
+    i14: 51
+    i15: 168
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
+--- !u!114 &114000011127256410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012254853358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e2198b919f21894c8ccfc467fd8e4c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114000011868317614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012254853358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32acc7dd7e732da41961221dad2f3bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureList:
+  - {fileID: 1000012394698406, guid: 992379f31a8ac9341b55af2b6f353f0c, type: 2}
+  - {fileID: 1000013986709430, guid: 6bfa5a84ccb68f64f87e17008afcbdab, type: 2}
+  - {fileID: 1000012038487298, guid: c0e4ba1aa0d21fb47a9471b76f75c7cf, type: 2}
+  - {fileID: 1000012834136332, guid: be5e63dbe7dca024ba872e35705a653d, type: 2}
+  - {fileID: 140580, guid: b5b78e98ee283354385aa429cae8b0b8, type: 2}
+  - {fileID: 1000013899141048, guid: 392a8b3b469929441aad21d4dcc80273, type: 2}
+  - {fileID: 168526, guid: 33860a5cf95a09c4ba4764b6c9917aff, type: 2}
+  team: 1
+  UnitsText: {fileID: 0}
+--- !u!114 &114000013042454950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012254853358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a3f2e241fb69d943b372205dc838f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseHealth: 100
+  CurrentHealth: 1
+  Speed: 0
+  AttackDamage: 0
+  AttackSpeed: 0
+  AttackRange: 1
+  Name: Barrack
+  Team: 1
+  Level: 1
+  ExpToNextLevel: 20
+  UniqueId: 0
+--- !u!114 &114000013506884712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012254853358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e2198b919f21894c8ccfc467fd8e4c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

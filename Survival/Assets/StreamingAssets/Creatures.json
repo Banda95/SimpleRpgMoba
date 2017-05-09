@@ -1,0 +1,81 @@
+[
+  {
+    "id": 0,
+    "name": "skeletonDark",
+    "health": 50,
+    "spd": 8,
+    "atk": 10,
+    "atkspd": 1.0,
+	"atkrange": 5,
+	"cost":200,
+	"cooldown":10
+  },
+  {
+    "id": 1,
+    "name": "skeletonFresh",
+    "health": 20,
+    "spd": 10,
+    "atk": 4,
+    "atkspd": 1.5,
+	"atkrange": 5,
+	"cost":70,
+	"cooldown":4
+  },
+  {
+    "id": 2,
+    "name": "skeletonMage",
+    "health": 15,
+    "spd": 8,
+    "atk": 6,
+    "atkspd": 1.5,
+	"atkrange": 20,
+	"cost":150,
+	"cooldown":5
+  },
+  {
+    "id": 3,
+    "name": "skeletonNormal",
+    "health": 15,
+    "spd": 10,
+    "atk": 2,
+    "atkspd": 2.0,
+	"atkrange": 5,
+	"cost":50,
+	"cooldown":3
+
+  },
+  {
+    "id": 4,
+    "name": "CaveWorm",
+    "health": 12,
+    "spd": 1,
+    "atk": 3,
+    "atkspd": 0.8,
+	"atkrange": 2,
+	"cost":100,
+	"cooldown":2
+  },
+  {
+    "id": 5,
+    "name": "Necromancer",
+    "health": 5,
+    "spd": 1,
+    "atk": 10,
+    "atkspd": 0.8,
+	"atkrange": 10,
+	"cost":100,
+	"cooldown":4
+  },
+  {
+    "id": 6,
+    "name": "Warrior",
+    "health": 15,
+    "spd": 1,
+    "atk": 6,
+    "atkspd": 1.0,
+	"atkrange": 2,
+	"cost":70,
+	"cooldown":1
+  }
+
+]

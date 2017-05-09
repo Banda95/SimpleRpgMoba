@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1227330239, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: GuardTree
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _serializedData: <scriptableobject version="1.3" type="RAIN.BehaviorTrees.BTAsset"><fields><field
+      value="&lt;behaviortree version=&quot;1.1&quot; repeatuntil=&quot;&quot; name=&quot;GuardTree&quot;
+      debugbreak=&quot;False&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
+      repeatuntil=&quot;&quot; name=&quot;root&quot; debugbreak=&quot;False&quot;&gt;&lt;parallel
+      tiebreaker=&quot;fail&quot; succeed=&quot;all&quot; repeatuntil=&quot;running&quot;
+      priority=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;decision
+      repeatuntil=&quot;running&quot; parametervalues=&quot;MA==&quot; parameters=&quot;VmFsdWU=&quot;
+      namespace=&quot;(global)&quot; name=&quot;decision&quot; debugbreak=&quot;False&quot;
+      classname=&quot;StatsDecision&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
+      repeatuntil=&quot;&quot; name=&quot;Death Sequence&quot; debugbreak=&quot;False&quot;&gt;&lt;yield
+      priority=&quot;&quot; name=&quot;yield&quot; debugbreak=&quot;False&quot; /&gt;&lt;action
+      repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
+      parameters=&quot;&quot; namespace=&quot;(global)&quot; name=&quot;Death&quot;
+      debugbreak=&quot;False&quot; classname=&quot;Death&quot; /&gt;&lt;/sequencer&gt;&lt;/decision&gt;&lt;action
+      repeatuntil=&quot;running&quot; parametervalues=&quot;&quot; parameters=&quot;&quot;
+      namespace=&quot;(global)&quot; name=&quot;FindTarget&quot; debugbreak=&quot;False&quot;
+      classname=&quot;SelectTarget&quot; /&gt;&lt;constraint repeatuntil=&quot;running&quot;
+      name=&quot;Update last known position &quot; debugbreak=&quot;False&quot; constraint=&quot;FinalTarget
+      != null&quot;&gt;&lt;action repeatuntil=&quot;&quot; parametervalues=&quot;RmluYWxUYXJnZXQA&quot;
+      parameters=&quot;VGFyZ2V0AExhc3RQb3NpdGlvblZhcmlhYmxl&quot; namespace=&quot;(global)&quot;
+      name=&quot;Update last known position&quot; debugbreak=&quot;False&quot; classname=&quot;CreateTrail&quot;
+      /&gt;&lt;timer waitforsec=&quot;0.8&quot; returnvalue=&quot;success&quot; name=&quot;pause
+      between updates&quot; debugbreak=&quot;False&quot; /&gt;&lt;/constraint&gt;&lt;selector
+      usepriorities=&quot;False&quot; repeatuntil=&quot;running&quot; name=&quot;Action
+      to do&quot; debugbreak=&quot;False&quot;&gt;&lt;constraint repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;Enemy not in sight&quot; debugbreak=&quot;False&quot;
+      constraint=&quot;FinalTarget == null&quot;&gt;&lt;animate repeatuntil=&quot;&quot;
+      name=&quot;Idle&quot; debugbreak=&quot;False&quot; animationstate=&quot;Idle&quot;
+      /&gt;&lt;/constraint&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;Enemy in sight&quot; debugbreak=&quot;False&quot;&gt;&lt;constraint
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;As long as the enemy
+      is in sight&quot; debugbreak=&quot;False&quot; constraint=&quot;FinalTarget
+      != null&quot;&gt;&lt;parallel tiebreaker=&quot;fail&quot; succeed=&quot;any&quot;
+      repeatuntil=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;move
+      turnspeed=&quot;&quot; repeatuntil=&quot;&quot; name=&quot;MoveToEnemy&quot;
+      movetarget=&quot;FinalTarget&quot; movespeed=&quot;2&quot; facetarget=&quot;FinalTarget&quot;
+      debugbreak=&quot;False&quot; closeenoughdistance=&quot;1&quot; closeenoughangle=&quot;&quot;
+      /&gt;&lt;animate repeatuntil=&quot;&quot; name=&quot;Run&quot; debugbreak=&quot;False&quot;
+      animationstate=&quot;Run&quot; /&gt;&lt;/parallel&gt;&lt;action repeatuntil=&quot;&quot;
+      parametervalues=&quot;IlJlYWNoZWQi&quot; parameters=&quot;UHJpbnRpbmdJbmZv&quot;
+      namespace=&quot;&quot; name=&quot;Print &amp;quot;Reached&amp;quot;&quot; debugbreak=&quot;False&quot;
+      classname=&quot;Print&quot; /&gt;&lt;parallel tiebreaker=&quot;fail&quot; succeed=&quot;all&quot;
+      repeatuntil=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;move
+      turnspeed=&quot;&quot; repeatuntil=&quot;&quot; name=&quot;FaceTarget&quot;
+      movetarget=&quot;&quot; movespeed=&quot;&quot; facetarget=&quot;FinalTarget&quot;
+      debugbreak=&quot;False&quot; closeenoughdistance=&quot;&quot; closeenoughangle=&quot;&quot;
+      /&gt;&lt;action repeatuntil=&quot;&quot; parametervalues=&quot;RmluYWxUYXJnZXQ=&quot;
+      parameters=&quot;VGFyZ2V0&quot; namespace=&quot;(global)&quot; name=&quot;Basic
+      Attack&quot; debugbreak=&quot;False&quot; classname=&quot;BasicAttack&quot;
+      /&gt;&lt;animate repeatuntil=&quot;&quot; name=&quot;Attack&quot; debugbreak=&quot;False&quot;
+      animationstate=&quot;Attack&quot; /&gt;&lt;/parallel&gt;&lt;parallel tiebreaker=&quot;fail&quot;
+      succeed=&quot;any&quot; repeatuntil=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot;
+      debugbreak=&quot;False&quot;&gt;&lt;animate repeatuntil=&quot;running&quot;
+      name=&quot;Idle&quot; debugbreak=&quot;False&quot; animationstate=&quot;Idle&quot;
+      /&gt;&lt;timer waitforsec=&quot;0.5&quot; returnvalue=&quot;success&quot; name=&quot;Wait
+      for next Attack&quot; debugbreak=&quot;False&quot; /&gt;&lt;/parallel&gt;&lt;/constraint&gt;&lt;parallel
+      tiebreaker=&quot;fail&quot; succeed=&quot;any&quot; repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;If the enemy get out of sight&quot; fail=&quot;all&quot;
+      debugbreak=&quot;False&quot;&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot;
+      name=&quot;Move To last known position&quot; movetarget=&quot;LastKnownPosition&quot;
+      movespeed=&quot;&quot; facetarget=&quot;LastKnownPosition&quot; debugbreak=&quot;False&quot;
+      closeenoughdistance=&quot;2&quot; closeenoughangle=&quot;&quot; /&gt;&lt;expression
+      returnvalue=&quot;evaluate&quot; repeatuntil=&quot;success&quot; name=&quot;enemy!=
+      null&quot; expression=&quot;FinalTarget != null&quot; debugbreak=&quot;False&quot;
+      /&gt;&lt;animate repeatuntil=&quot;&quot; name=&quot;Run&quot; debugbreak=&quot;False&quot;
+      animationstate=&quot;Run&quot; /&gt;&lt;/parallel&gt;&lt;action repeatuntil=&quot;&quot;
+      priority=&quot;&quot; parametervalues=&quot;Ikxvc3QgaXQi&quot; parameters=&quot;UHJpbnRpbmdJbmZv&quot;
+      namespace=&quot;&quot; name=&quot;Print &amp;quot;Lost it&amp;quot;&quot; debugbreak=&quot;False&quot;
+      classname=&quot;Print&quot; /&gt;&lt;/selector&gt;&lt;/selector&gt;&lt;/parallel&gt;&lt;/sequencer&gt;&lt;/behaviortree&gt;"
+      type="System.String" id="treeData" /><field type="System.Array" id="treeBindings"
+      elementtype="System.String" /></fields><references /></scriptableobject>
+    _serializedGameObjects: []
+    _serializedCustomData: []

@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: 72dfe8b6245e9e248894ac8809582773
+SubstanceImporter:
+  serializedVersion: 5
+  materialInstances:
+  - serializedVersion: 16
+    name: CaveWorm
+    prototypeName: CaveWorm
+    shaderName: 
+    shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+    shaderKeywords: 
+    renderQueue: -1
+    lightmapFlags: 5
+    inputs:
+    - name: BaseColor
+      value:
+        scalar[0]: 0.41176468
+        scalar[1]: 0.26315376
+        scalar[2]: 0.124134935
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Sub01_Color
+      value:
+        scalar[0]: 1
+        scalar[1]: 0.95588243
+        scalar[2]: 0.3602941
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Sub02_Color
+      value:
+        scalar[0]: 0.33088237
+        scalar[1]: 0.16544119
+        scalar[2]: 0.16544119
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Sub03_Color
+      value:
+        scalar[0]: 0.22794116
+        scalar[1]: 0.65257627
+        scalar[2]: 1
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Sub03_Opacity
+      value:
+        scalar[0]: 0.12
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Curvature
+      value:
+        scalar[0]: 0.12
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Rust
+      value:
+        scalar[0]: 0.1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Skin_Color
+      value:
+        scalar[0]: 1
+        scalar[1]: 0.500008
+        scalar[2]: 0
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Sub01_Opacity
+      value:
+        scalar[0]: 0.12
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Specular_Opacity
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Specular_Strength
+      value:
+        scalar[0]: 0.26
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $pixelsize
+      value:
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Eye_Color
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Skin01_Color
+      value:
+        scalar[0]: 1
+        scalar[1]: 0.500008
+        scalar[2]: 0
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Skin02_Color
+      value:
+        scalar[0]: 0.74264705
+        scalar[1]: 0.52648103
+        scalar[2]: 0.29487458
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Sub02_Opacity
+      value:
+        scalar[0]: 0.17
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Normal
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: AmbientOcclusion
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 0
+      animationUpdateRate: 42
+    materialProperties:
+      serializedVersion: 2
+      texEnvs:
+        data:
+          first:
+            name: _MainTex
+          second:
+            texture: {fileID: 818147663, guid: 00000000000000000000000000000000, type: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _BumpMap
+          second:
+            texture: {fileID: 2060357252, guid: 00000000000000000000000000000000,
+              type: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+      floats:
+        data:
+          first:
+            name: _Shininess
+          second: 0.22035475
+      colors:
+        data:
+          first:
+            name: _Color
+          second: {r: 1, g: 1, b: 1, a: 1}
+        data:
+          first:
+            name: _SpecColor
+          second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    textureParameters:
+    - name: CaveWorm_diffuse
+      alphaSource: 5
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: CaveWorm_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp:
+        name: _MainTex
+      material: {instanceID: 0}
+      baseUID: 3701651327
+    - shaderProp:
+        name: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 3701651325
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadingBehavior: 1
+  deletedPrototypes: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
